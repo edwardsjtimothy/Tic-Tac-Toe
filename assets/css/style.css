@@ -1,0 +1,53 @@
+/* styling borders to create game board */
+
+#a1, #a2, #b1, #b2 {
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+#a3, #b3 {
+    border-bottom: 3px solid black;
+}
+
+#c1, #c2 {
+    border-right: 3px solid black;
+}
+
+#a1, #a2, #b1, #b2, #a3, #b3, #c1, #c2, #c3 {
+    height:130px;
+    text-align: center;
+}
+
+.gamepiece {
+    position: relative;
+    top: 15px;
+    font-size: 4em;
+}
+
+.tictactoe {
+    padding: 0px;
+}
+
+.buffer {
+    margin-top: 50px;
+}
+
+.scoreboard {
+    display: inline;
+    text-align: center;
+    font-size: 2em;
+   
+}
+
+
+/* page styles */
+
+body {
+    font-family: 'Space Mono', monospace;
+}
+
+.winner-banner {
+    height: 100px;
+    width: 100%;
+    background-color: black;
+}
