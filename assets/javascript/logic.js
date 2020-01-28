@@ -1,12 +1,12 @@
 $(document).ready(function () {
   // multiplayer 
 
-  var arrayPosition = 0;
+  let arrayPosition = 0;
 
   // score board 
 
-  var playerXScore = 0;
-  var playerOScore = 0;
+  let playerXScore = 0;
+  let playerOScore = 0;
 
   $("#x-score").text(`X's Score: ${playerXScore}`);
   $("#o-score").text(`O's Score: ${playerOScore}`);
@@ -136,14 +136,12 @@ $(document).ready(function () {
   //click on grid to allow player to select "X" or "O"
 
   $(".gamepiece").click(function () {
-    var gamepieceArray = ["X", "O",];
+    const gamepieceArray = ["X", "O",];
     if (arrayPosition === 2) {
       arrayPosition = 0;
     };
     $(this).html(gamepieceArray[arrayPosition]);
     arrayPosition++;
   });
-
-
 
 });
